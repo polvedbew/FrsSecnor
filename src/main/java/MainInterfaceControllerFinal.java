@@ -56,9 +56,28 @@ public class MainInterfaceControllerFinal {
     }
 
 
-    public void setHiText(final String str){
+    public void setHiText(final String strn){
+        final String lower=strn.toLowerCase();
+        final String str=strn.substring(2);
         Platform.runLater(()->{
-            id_hi_text.setText("Hi,\n Stupid "+str+"\n this is secnor \nand \njust get lost");
+            if(strn.contains(":nul")){
+                id_hi_text.setText("Hi,"+ "\n regards from Secnor... \n Have a nice day ");
+                return;
+            }
+            if(lower.contains("mani")
+                    ||lower.contains("sajan")
+                    ||lower.contains("ikka")
+                    ||lower.contains("chechi")
+                    ||lower.contains("arun")
+                    ||lower.contains("ajith")
+            ){
+                id_hi_text.setText("Hi,\n " + str + "\n regards from Secnor... \n Have a nice day ");
+
+            }else if(lower.contains("badsha")){
+                id_hi_text.setText("Hey,\n  " + str + "\n this is secnor go back to EyeNor");
+            }else {
+                id_hi_text.setText("Hi,\n  " + str + "\n this is secnor, \nand it is free to download from \nnordencommunications.org");
+            }
         });
     }
 
