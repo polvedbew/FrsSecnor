@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.registration.EmployeeRegistrationController03">
+   <children>
+      <AnchorPane prefHeight="18.0" prefWidth="949.0" style="-fx-background-color: linear-gradient(to bottom , #809DAD, #304D5D);">
+         <children>
+            <Text fill="WHITE" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Registration" textAlignment="CENTER" wrappingWidth="948.5366325378418">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="682.0" prefWidth="942.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="641.0" layoutX="12.0" layoutY="13.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="913.0" />
+            <Text layoutX="35.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 1" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_address_1" layoutX="181.0" layoutY="72.0" prefHeight="26.0" prefWidth="224.0" />
+            <Button fx:id="id_reg_finish" layoutX="797.0" layoutY="605.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="FInish">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="201.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Present Address" wrappingWidth="184.93670654296875">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_address_2" layoutX="181.0" layoutY="112.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="30.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_addr_lm" layoutX="181.0" layoutY="151.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_p_city" layoutX="181.0" layoutY="190.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="34.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 2" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Mark" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="27.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_state" layoutX="181.0" layoutY="230.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_p_country" layoutX="181.0" layoutY="268.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_p_phone" layoutX="181.0" layoutY="346.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="32.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number" wrappingWidth="159.59999999999985">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_mobile" layoutX="181.0" layoutY="385.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="26.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_p_postal" layoutX="181.0" layoutY="306.0" prefHeight="26.0" prefWidth="224.0" />
+            <CheckBox fx:id="id_same_as_present" layoutX="521.0" layoutY="46.0" mnemonicParsing="false" text="same as present">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font></CheckBox>
+            <TextField fx:id="id_perm_addr_1" layoutX="520.0" layoutY="72.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr2" layoutX="520.0" layoutY="112.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_lm" layoutX="520.0" layoutY="151.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_city" layoutX="520.0" layoutY="190.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_state" layoutX="520.0" layoutY="230.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_country" layoutX="520.0" layoutY="268.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_phone" layoutX="520.0" layoutY="346.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_mobile" layoutX="520.0" layoutY="385.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_perm_addr_post" layoutX="520.0" layoutY="306.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="521.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permenant Address" wrappingWidth="205.0">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="id_back_reg3" layoutX="663.0" layoutY="605.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

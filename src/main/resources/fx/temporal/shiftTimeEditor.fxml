@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<AnchorPane prefHeight="563.0" prefWidth="606.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.temporal.ShiftTimeEditorController">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="600.0" style="-fx-background-color: #68828C;">
+         <children>
+            <Text layoutX="67.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift time" textAlignment="CENTER" wrappingWidth="466.60003662109364">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="528.0" layoutX="13.0" layoutY="35.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="581.0" />
+       <Text layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="80.99999999999989">
+           <font>
+               <Font name="Calibri" size="20.0" />
+           </font>
+       </Text>
+       <Text layoutX="29.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="80.99999999999989">
+           <font>
+               <Font name="Calibri" size="20.0" />
+           </font>
+       </Text>
+       <Text layoutX="29.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning" wrappingWidth="98.99999999999989">
+           <font>
+               <Font name="Calibri" size="20.0" />
+           </font>
+       </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="140.0" layoutX="19.0" layoutY="184.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="569.0" />
+       <Text layoutX="144.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" wrappingWidth="80.99999999999989">
+           <font>
+               <Font name="Calibri" size="20.0" />
+           </font>
+       </Text>
+       <Text layoutX="230.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" wrappingWidth="80.99999999999989">
+       <font>
+           <Font name="Calibri" size="20.0" />
+       </font>
+   </Text>
+       <Text layoutX="331.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Margin" wrappingWidth="80.99999999999989">
+       <font>
+           <Font name="Calibri" size="20.0" />
+       </font>
+   </Text>
+       <Text layoutX="414.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto out/resume" wrappingWidth="168.9999999999999">
+       <font>
+           <Font name="Calibri" size="20.0" />
+       </font>
+   </Text>
+      <TextField fx:id="id_shift_name" layoutX="150.0" layoutY="59.0" prefHeight="26.0" prefWidth="425.0" />
+      <Text layoutX="28.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="69.99999999999989">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="69.99999999999989">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="id_button_save" layoutX="455.0" layoutY="517.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="id_button_cancel" layoutX="329.0" layoutY="517.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="26.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" wrappingWidth="149.336669921875">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="id_remarks" layoutX="26.0" layoutY="361.0" prefHeight="140.0" prefWidth="551.0" />
+
+       <SearchableComboBox fx:id="id_to_hours" editable="false" layoutX="140.0" layoutY="275.0" prefHeight="26.0" prefWidth="70.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_auto_end" editable="false" layoutX="428.0" layoutY="275.0" prefHeight="26.0" prefWidth="139.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_auto_start" editable="false" layoutX="428.0" layoutY="224.0" prefHeight="26.0" prefWidth="139.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_from_hours" editable="false" layoutX="139.0" layoutY="225.0" prefHeight="26.0" prefWidth="70.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_to_minutes" editable="false" layoutX="234.0" layoutY="274.0" prefHeight="26.0" prefWidth="70.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_from_minutes" editable="false" layoutX="234.0" layoutY="225.0" prefHeight="26.0" prefWidth="70.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_status" editable="false" layoutX="151.0" layoutY="98.0" prefHeight="26.0" prefWidth="425.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+       <SearchableComboBox fx:id="id_warning" editable="false" layoutX="151.0" layoutY="139.0" prefHeight="26.0" prefWidth="425.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+      <TextField fx:id="id_from_margin" layoutX="324.0" layoutY="275.0" prefHeight="26.0" prefWidth="81.0" promptText="Minutes" />
+      <TextField fx:id="id_to_margin" layoutX="325.0" layoutY="226.0" prefHeight="26.0" prefWidth="81.0" promptText="Minutes" />
+
+
+   </children>
+</AnchorPane>

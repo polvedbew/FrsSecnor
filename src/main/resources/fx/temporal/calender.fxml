@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<AnchorPane fx:id="id_main_anchor_pane" prefHeight="683.0" prefWidth="779.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.temporal.CalenderController">
+   <children>
+      <AnchorPane layoutY="23.0" prefHeight="611.0" prefWidth="779.0">
+         <children>
+            <Rectangle fx:id="id_content_rectangle11" fill="#68828c" height="105.0" layoutX="12.0" layoutY="7.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="750.0" />
+            <AnchorPane layoutX="8.0" layoutY="121.0" prefHeight="320.0" prefWidth="750.0">
+               <children>
+                  <Rectangle fx:id="id_content_rectangle111" fill="#68828c" height="316.0" layoutX="5.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="750.0" />
+                  <ScrollPane hbarPolicy="NEVER" layoutX="7.0" layoutY="50.0" prefWidth="754.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/scrollBar.css">
+                     <content>
+                        <FlowPane fx:id="id_calender_flow_pane" maxWidth="740.0" minWidth="740.0" prefHeight="255.0" prefWidth="740.0" prefWrapLength="5000.0" />
+                     </content>
+                  </ScrollPane>
+                  <Rectangle fx:id="id_side_home_rect2" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="12.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect22" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="538.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect24" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="433.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect25" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="328.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect26" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="223.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect27" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="116.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Rectangle fx:id="id_side_home_rect21" fill="linear-gradient(to top , #68828C , #88A2AC)" height="32.0" layoutX="643.0" layoutY="11.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; " width="98.0" />
+                  <Text layoutX="221.0" layoutY="32.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="544.0" layoutY="32.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="434.0" layoutY="31.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="328.0" layoutY="32.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="116.0" layoutY="32.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="8.0" layoutY="31.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="646.0" layoutY="33.07666015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" textAlignment="CENTER" wrappingWidth="98.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Rectangle fx:id="id_content_rectangle1111" fill="#68828c" height="165.0" layoutX="13.0" layoutY="446.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="754.0" />
+            <SearchableComboBox fx:id="id_year" editable="false" layoutX="27.0" layoutY="15.0" prefHeight="40.0" prefWidth="180.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <SearchableComboBox fx:id="id_month" editable="false" layoutX="26.0" layoutY="63.0" prefHeight="40.0" prefWidth="180.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <TextArea fx:id="id_remarks_month" layoutX="220.0" layoutY="13.0" opacity="0.7" prefHeight="91.0" prefWidth="507.0" style="-fx-background-color: linear-gradient(to left, #EAF8FF , #F2F8FF);">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="id_remarks" layoutX="491.0" layoutY="471.0" opacity="0.7" prefHeight="91.0" prefWidth="262.0" style="-fx-background-color: linear-gradient(to left, #EAF8FF , #F2F8FF);">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Text layoutX="490.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="id_side_home_rect11" arcHeight="5.0" arcWidth="2.0" fill="linear-gradient(to top , #68828C , #88A2AC)" height="38.0" layoutX="625.0" layoutY="567.0" opacity="0.37" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="132.0" />
+            <Text fx:id="id_save" layoutX="629.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apply" textAlignment="CENTER" wrappingWidth="122.45068359375">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="id_side_home_rect1" arcHeight="5.0" arcWidth="2.0" fill="linear-gradient(to top , #68828C , #88A2AC)" height="38.0" layoutX="487.0" layoutY="567.0" opacity="0.37" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="132.0" />
+            <Text fx:id="id_hl_day" layoutX="35.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="88">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Text>
+            <Text fx:id="id_productive" layoutX="31.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productive minutes" wrappingWidth="419.740234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="id_overTime" layoutX="30.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Over time" wrappingWidth="419.740234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="id_method" layoutX="30.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Method" wrappingWidth="419.740234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="id_by" layoutX="29.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By" wrappingWidth="419.740234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="id_period" layoutX="115.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From to" wrappingWidth="321.880859375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+             <SearchableComboBox fx:id="id_attendance_status" editable="false" layoutX="114.0" layoutY="454.0" prefHeight="32.0" prefWidth="322.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <Text fx:id="id_download" layoutX="496.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Download" textAlignment="CENTER" wrappingWidth="122.45068359375">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+
+         </children>
+      </AnchorPane>
+      <Text fx:id="id_person_name" layoutX="21.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person" textAlignment="CENTER" wrappingWidth="199.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_day_offs" layoutX="566.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day offs" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_sick_leaves" layoutX="388.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sick leaves" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_leaves" layoutX="32.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual Leave" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_earned_leave" layoutX="210.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Earned Leave" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_privilege_leave" layoutX="210.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privilege Leave" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_emergency_leave" layoutX="388.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Leave" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_paid_leave" layoutX="32.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid Leave" textAlignment="CENTER" wrappingWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

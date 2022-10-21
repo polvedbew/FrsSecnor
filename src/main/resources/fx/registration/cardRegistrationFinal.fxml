@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.registration.CardRegistrationController">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="408.0" style="-fx-background-color: #68828C;">
+         <children>
+            <Text layoutX="67.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new card" textAlignment="CENTER" wrappingWidth="466.60003662109364">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="611.0" prefWidth="570.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="585.0" layoutX="14.0" layoutY="12.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="573.0" />
+            <Button fx:id="id_button_add" layoutX="432.0" layoutY="520.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="44.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Name" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access Level" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="id_button_cancel" layoutX="311.0" layoutY="520.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="183.0" layoutX="26.0" layoutY="330.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="161.0" />
+            <ImageView fitHeight="140.0" fitWidth="141.0" layoutX="37.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/sidePanel/floorPlan.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="32.0" layoutY="519.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" text="Upload Photo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="44.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valid From" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="id_valid_from" layoutX="194.0" layoutY="289.0" prefHeight="26.0" prefWidth="152.0" />
+            <Text layoutX="365.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="30.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+             <Text layoutX="44.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Association" wrappingWidth="133.9999999999999">
+                 <font>
+                     <Font name="Calibri" size="20.0" />
+                 </font>
+             </Text>
+
+             <SearchableComboBox fx:id="id_access_level" editable="false" layoutX="194.0" layoutY="161.0" prefHeight="26.0" prefWidth="369.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+             <SearchableComboBox fx:id="id_association" editable="false" layoutX="194.0" layoutY="202.0" prefHeight="26.0" prefWidth="369.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <SearchableComboBox fx:id="id_door_status" editable="false" layoutX="194.0" layoutY="119.0" prefHeight="26.0" prefWidth="369.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+             <TextField fx:id="id_card_number" layoutX="194.0" layoutY="78.0" prefHeight="26.0" prefWidth="369.0" />
+            <TextField fx:id="id_card_name" layoutX="194.0" layoutY="38.0" prefHeight="26.0" prefWidth="369.0" />
+            <Text layoutX="196.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_remarks" layoutX="195.0" layoutY="357.0" prefHeight="140.0" prefWidth="369.0" />
+            <DatePicker fx:id="id_valid_to" layoutX="412.0" layoutY="288.0" prefHeight="26.0" prefWidth="152.0" />
+            <Text layoutX="44.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Type" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_card_type" layoutX="194.0" layoutY="243.0" prefHeight="26.0" prefWidth="369.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

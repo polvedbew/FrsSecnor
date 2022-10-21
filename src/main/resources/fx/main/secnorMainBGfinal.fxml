@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainInterfaceControllerFinal">
+   <children>
+      <AnchorPane fx:id="id_main_anchor_pane" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF)" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="id_loading_image" fitHeight="97.0" fitWidth="206.0" layoutX="-18.0" layoutY="-3.0" nodeOrientation="INHERIT" pickOnBounds="true">
+               <image>
+                  <Image url="@../../images/common/l1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="id_image_centre" fitHeight="413.0" fitWidth="433.0" layoutX="451.0" layoutY="216.0" opacity="0.15" pickOnBounds="true" preserveRatio="true" x="100.0" AnchorPane.bottomAnchor="350.0" AnchorPane.topAnchor="316.0">
+               <image>
+                  <Image url="@../../images/main/logoNorden.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="id_content_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="634.0" layoutX="307.0" layoutY="87.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="923.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="307.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="87.0" />
+            <ImageView fx:id="id_image_bottom_left" fitHeight="318.0" fitWidth="444.0" layoutX="-9.0" layoutY="461.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/meshnor2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="id_bottom_right_image" fitHeight="296.0" fitWidth="425.0" layoutX="905.0" layoutY="486.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/secnorE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="id_top_right_image" fitHeight="318.0" fitWidth="422.0" layoutX="904.0" layoutY="1.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/mesh2.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="id_norden_url" layoutX="941.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.nordencommunication.com">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="id_top_right_anchor_pane" layoutX="934.0" prefHeight="135.0" prefWidth="374.0">
+               <children>
+                  <Rectangle fx:id="id_main_search" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="32.0" layoutX="20.0" layoutY="30.0" opacity="0.24" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="206.0" />
+                   <ImageView fx:id="id_add_button_main" fitHeight="30.0" fitWidth="25.0" layoutX="221.0" layoutY="94.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                           <Image url="@../../images/main/addStar.png" />
+                       </image>
+                   </ImageView>
+                  <ImageView fx:id="id_session_manage_icon" fitHeight="72.0" fitWidth="75.0" layoutX="218.0" layoutY="13.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/main/userMenuMale.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="id_main_text_search" layoutX="28.0" layoutY="34.0" prefHeight="24.0" prefWidth="162.0" promptText="Type to search" style="-fx-background-color: #00000000;" />
+                  <ImageView fx:id="id_main_search_button" fitHeight="50.0" fitWidth="25.0" layoutX="193.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/main/search.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="id_main_search1" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="32.0" layoutX="51.0" layoutY="91.0" opacity="0.24" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="136.0" />
+                  <ComboBox fx:id="id_main_validity" layoutX="54.0" layoutY="95.0" prefHeight="21.0" prefWidth="130.0" promptText="VALID" style="-fx-background-color: #00000000;" stylesheets="@../styleSheets/mainCombobox.css" />
+                  <ImageView fx:id="id_refresh_button_main" fitHeight="30.0" fitWidth="25.0" layoutX="193.0" layoutY="94.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/main/refresh.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="id_main_help" layoutX="311.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help" underline="true" />
+               </children>
+
+            </AnchorPane>
+            <ScrollPane fx:id="id_content_scroll_pane" hbarPolicy="NEVER" layoutX="342.0" layoutY="122.0" prefHeight="590.0" prefWidth="898.0" style="-fx-background-color: #00000000; -fx-background: #00000000; " stylesheets="@../styleSheets/scrollBar.css">
+               <content>
+                  <FlowPane fx:id="id_content_flow_pane" prefHeight="569.0" prefWidth="872.0">
+                     <children>
+                        <Text fx:id="id_hi_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi,">
+                           <font>
+                              <Font size="50.0" />
+                           </font>
+                        </Text>
+                     </children></FlowPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="id_side_scroll_pane" hbarPolicy="NEVER" layoutX="35.0" layoutY="82.0" prefHeight="652.0" prefWidth="250.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/scrollBar.css">
+               <content>
+                  <FlowPane fx:id="id_flow_pane_side" alignment="TOP_CENTER" maxWidth="234.0" prefHeight="637.0" prefWidth="234.0" prefWrapLength="10000.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane prefHeight="112.0" prefWidth="273.0" />
+            <ImageView fitHeight="53.0" fitWidth="189.0" layoutX="64.0" layoutY="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/secnorNorden.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

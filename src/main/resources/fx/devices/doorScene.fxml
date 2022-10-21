@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="783.0" prefWidth="1257.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.door.DoorSceneController">
+   <children>
+      <HBox prefHeight="759.0" prefWidth="1285.0" spacing="10.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF); -fx-background: linear-gradient(to top left, #68828C , #F2F2FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox style="-fx-background-color: #00000000; -fx-background: #00000000;" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="293.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="2.0" layoutY="7.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="291.0" />
+                        <Label layoutX="7.0" layoutY="12.0" prefHeight="18.0" prefWidth="280.0" style="-fx-alignment: center; -fx-text-fill: #000000;" text="Person/Group" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <Rectangle fx:id="id_group_personRectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="726.0" layoutX="2.0" layoutY="12.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="291.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="12.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="8.0" layoutY="19.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="280.0" AnchorPane.topAnchor="19.0" />
+                        <TextField fx:id="id_groupPersonSearch" layoutX="12.0" layoutY="23.0" minWidth="240.0" opacity="0.75" prefHeight="24.0" prefWidth="240.0" promptText="Type here to search" style="-fx-background-color: #00000000;" />
+                        <ListView fx:id="id_groupPersonsList" layoutY="46.0" minWidth="291.0" style="-fx-control-inner-background: #00000000; -fx-control-inner-background-alt: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/sideList.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="60.0" />
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="252.0" layoutY="22.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/main/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox style="-fx-background-color: #00000000; -fx-background: #00000000;" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="293.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="2.0" layoutY="7.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="291.0" />
+                        <Label layoutX="6.0" layoutY="13.0" prefHeight="18.0" prefWidth="280.0" style="-fx-alignment: center; -fx-text-fill: #000000;" text="Online Access" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Rectangle fx:id="id_online_access_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="726.0" layoutY="14.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="291.0" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="11.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="6.0" layoutY="19.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="280.0" AnchorPane.topAnchor="19.0" />
+                        <TextField fx:id="id_onlineAccessSearch" layoutX="14.0" layoutY="22.0" minWidth="240.0" opacity="0.75" prefHeight="24.0" prefWidth="240.0" promptText="Type here to search" style="-fx-background-color: #00000000;" />
+                        <ListView fx:id="id_onlineAccessList" layoutY="55.0" minWidth="291.0" style="-fx-control-inner-background: #00000000; -fx-control-inner-background-alt: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/sideList.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="60.0" />
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="255.0" layoutY="22.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/main/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox style="-fx-background-color: #00000000; -fx-background: #00000000;" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="293.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="2.0" layoutY="7.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="291.0" />
+                        <Label layoutX="6.0" layoutY="12.0" prefHeight="18.0" prefWidth="280.0" style="-fx-alignment: center; -fx-text-fill: #000000;" text="Offline Access" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <Rectangle fx:id="id_offline_access_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="726.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="291.0" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="11.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="5.0" layoutY="19.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="280.0" AnchorPane.topAnchor="19.0" />
+                        <TextField fx:id="id_offlineAccessSearch" layoutX="13.0" layoutY="23.0" minWidth="240.0" opacity="0.75" prefHeight="24.0" prefWidth="240.0" promptText="Type here to search" style="-fx-background-color: #00000000;" />
+                        <ListView fx:id="id_offlineAccessList" layoutY="51.0" minWidth="291.0" style="-fx-control-inner-background: #00000000; -fx-control-inner-background-alt: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/sideList.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="60.0" />
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="253.0" layoutY="23.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/main/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox maxHeight="2000.0" maxWidth="600.0" minHeight="100.0" minWidth="250.0" prefWidth="400.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="293.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="2.0" layoutY="7.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="322.0" />
+                        <Label layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="322.0" style="-fx-alignment: center; -fx-text-fill: #000000;" text="Status" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="832.0" prefWidth="334.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Rectangle fx:id="id_status_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="726.0" layoutY="15.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="332.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="4.0" layoutY="19.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="322.0" AnchorPane.topAnchor="19.0" />
+                        <ListView fx:id="id_door_log_list" layoutX="6.0" layoutY="293.0" prefHeight="439.0" prefWidth="322.0" style="-fx-control-inner-background: #00000000;                                   -fx-control-inner-background-alt: derive(-fx-control-inner-background, 100%)" stylesheets="@../styleSheets/sideList.css" AnchorPane.bottomAnchor="13.0" AnchorPane.topAnchor="293.0" />
+                        <Label layoutX="13.0" layoutY="26.0" prefHeight="18.0" prefWidth="34.0" style="-fx-text-fill: #000000;" text="Live" textAlignment="CENTER" />
+                        <Label layoutX="226.0" layoutY="26.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="170.0" layoutX="5.0" layoutY="57.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="322.0" AnchorPane.topAnchor="57.0" />
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="43.0" layoutY="22.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/common/radio.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="31.0" layoutX="214.0" layoutY="185.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="98.0" />
+                        <Label fx:id="id_edit_button" layoutX="237.0" layoutY="193.0" prefHeight="14.0" prefWidth="72.0" style="-fx-text-fill: #000000;" text="Edit door">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="67.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Name" textAlignment="CENTER" />
+                        <Label layoutX="20.0" layoutY="158.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Vilidity" textAlignment="CENTER" />
+                        <Label layoutX="20.0" layoutY="140.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Parent" textAlignment="CENTER" />
+                        <Label layoutX="20.0" layoutY="85.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Type" textAlignment="CENTER" />
+                        <Label layoutX="20.0" layoutY="104.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Status" textAlignment="CENTER" />
+                        <Label layoutX="20.0" layoutY="122.0" prefHeight="18.0" prefWidth="71.0" style="-fx-text-fill: #000000;" text="Access.L" textAlignment="CENTER" />
+                        <Label fx:id="id_name_field" layoutX="93.0" layoutY="67.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Label fx:id="id_validity_field" layoutX="93.0" layoutY="158.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Label fx:id="id_parent_field" layoutX="93.0" layoutY="140.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Label fx:id="id_type_field" layoutX="93.0" layoutY="85.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Label fx:id="id_status_field" layoutX="93.0" layoutY="104.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <Label fx:id="id_access_level_field" layoutX="93.0" layoutY="122.0" prefHeight="18.0" prefWidth="230.0" style="-fx-text-fill: #000000;" text="Timing" textAlignment="CENTER" />
+                        <AnchorPane layoutX="3.0" layoutY="231.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="59.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="324.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="24.0" layoutX="10.0" layoutY="4.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="131.0" />
+                              <DatePicker fx:id="id_from" layoutX="45.0" layoutY="31.0" prefHeight="15.0" prefWidth="96.0" />
+                              <Label fx:id="id_download_text" layoutX="41.0" layoutY="8.0" prefHeight="14.0" prefWidth="72.0" style="-fx-text-fill: #000000;" text="Download">
+                                 <font>
+                                    <Font name="Calibri" size="12.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="id_to" layoutX="181.0" layoutY="31.0" prefHeight="15.0" prefWidth="96.0" />
+                              <Label fx:id="id_edit_button11" layoutX="9.0" layoutY="36.0" prefHeight="15.0" prefWidth="34.0" style="-fx-text-fill: #000000;" text="From">
+                                 <font>
+                                    <Font name="Calibri" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="id_edit_button111" layoutX="149.0" layoutY="36.0" prefHeight="15.0" prefWidth="34.0" style="-fx-text-fill: #000000;" text="To">
+                                 <font>
+                                    <Font name="Calibri" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="id_refresh" fitHeight="34.0" fitWidth="34.0" layoutX="284.0" layoutY="14.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/main/refresh.png" />
+                                 </image>
+                              </ImageView>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="24.0" layoutX="151.0" layoutY="4.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="131.0" />
+                              <TextField fx:id="id_log_search" layoutX="155.0" layoutY="4.0" minWidth="96.0" opacity="0.75" prefHeight="24.0" prefWidth="96.0" promptText="Type here to search" style="-fx-background-color: #00000000;" />
+                              <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="252.0" layoutY="4.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/main/search.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+
+                   
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.registration.ControllerRegistrationController">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="408.0" style="-fx-background-color: linear-gradient(to bottom , #809DAD, #304D5D);">
+         <children>
+            <Text fill="WHITE" layoutX="46.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Controller" textAlignment="CENTER" wrappingWidth="940.9999999999999">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="697.0" prefWidth="942.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="86.0" layoutX="993.0" layoutY="27.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 20;" width="42.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="145.0" layoutX="22.0" layoutY="130.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="1015.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="653.0" layoutX="14.0" layoutY="6.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="1031.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="145.0" layoutX="21.0" layoutY="286.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="1015.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="145.0" layoutX="21.0" layoutY="442.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 40; -fx-arc-width: 40;" width="1015.0" />
+            <Text layoutX="13.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available devices (local)" textAlignment="CENTER" wrappingWidth="94.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="id_add_button" layoutX="834.0" layoutY="609.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="25.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="125.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_ip_address" layoutX="158.0" layoutY="313.0" prefHeight="26.0" prefWidth="185.0" />
+            <Text layoutX="361.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subnet Mask" wrappingWidth="146.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP Address" wrappingWidth="149.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="97.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="713.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP Gateway" wrappingWidth="115.99999999999989">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="425.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Door 1" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <SearchableComboBox fx:id="id_door1" editable="false" layoutX="502.0" layoutY="466.0" prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+            <ListView layoutX="106.0" layoutY="27.0" opacity="0.36" orientation="HORIZONTAL" prefHeight="86.0" prefWidth="878.0" style="-fx-background-color: #778B94;" />
+            <AnchorPane layoutX="112.0" layoutY="32.0" prefHeight="76.0" prefWidth="97.0" style="-fx-background-color: #809DAD;">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: #333333;" text="Device type specific icon + name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="578.0" layoutY="59.0" prefHeight="16.0" prefWidth="269.0" text="Or no devices available" textFill="WHITE" />
+            <Text layoutX="425.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Door 2" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <SearchableComboBox fx:id="id_door2" editable="false" layoutX="502.0" layoutY="536.0" prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <Text layoutX="759.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Door 3" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <SearchableComboBox fx:id="id_door3" editable="false" layoutX="838.0" layoutY="466.0" prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <SearchableComboBox fx:id="id_access_level" editable="false" layoutX="499.0" layoutY="149.0" prefHeight="26.0" prefWidth="185.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <SearchableComboBox fx:id="id_door_status" editable="false" layoutX="159.0" layoutY="150.0" prefHeight="26.0" prefWidth="185.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <Text layoutX="758.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Door 4" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+             <SearchableComboBox fx:id="id_door4" editable="false" layoutX="839.0" layoutY="534.0" prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <Text layoutX="725.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time zone" wrappingWidth="125.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organization" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="id_organization" editable="true" layoutX="160.0" layoutY="212.0" prefHeight="26.0" prefWidth="185.0" promptText="Select" />
+            <Text layoutX="367.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_mask" layoutX="497.0" layoutY="314.0" prefHeight="26.0" prefWidth="185.0" />
+            <TextField fx:id="id_gateway" layoutX="839.0" layoutY="315.0" prefHeight="26.0" prefWidth="185.0" />
+            <TextField fx:id="id_user" layoutX="159.0" layoutY="467.0" prefHeight="26.0" prefWidth="185.0" />
+            <TextField fx:id="id_passWord" layoutX="159.0" layoutY="535.0" prefHeight="26.0" prefWidth="185.0" />
+            <ComboBox fx:id="id_department" editable="true" layoutX="499.0" layoutY="212.0" prefHeight="26.0" prefWidth="185.0" promptText="Select" />
+            <ComboBox fx:id="id_time_zone" editable="true" layoutX="840.0" layoutY="213.0" prefHeight="26.0" prefWidth="185.0" promptText="Select" />
+            <AnchorPane layoutX="216.0" layoutY="32.0" prefHeight="76.0" prefWidth="97.0" style="-fx-background-color: #809DAD;">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: #333333;" text="Device type specific icon + name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="320.0" layoutY="32.0" prefHeight="76.0" prefWidth="97.0" style="-fx-background-color: #809DAD;">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: #333333;" text="Device type specific icon + name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="424.0" layoutY="32.0" prefHeight="76.0" prefWidth="97.0" style="-fx-background-color: #809DAD;">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: #333333;" text="Device type specific icon + name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="id_name" layoutX="841.0" layoutY="150.0" prefHeight="26.0" prefWidth="185.0" />
+            <Text layoutX="429.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" wrappingWidth="106.40000000000009">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="697.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name" wrappingWidth="149.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="733.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serial No" wrappingWidth="106.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+             <SearchableComboBox fx:id="id_model" layoutX="498.0" layoutY="374.0" prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <TextField fx:id="id_serial" layoutX="838.0" layoutY="374.0" prefHeight="26.0" prefWidth="185.0" />
+            <ImageView fx:id="id_refresh" fitHeight="35.0" fitWidth="35.0" layoutX="997.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/refresh.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="27.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="361.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access level" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soft gateway" wrappingWidth="146.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <SearchableComboBox fx:id="id_software_gateway" layoutX="158.0" layoutY="374.0"  prefHeight="26.0" prefWidth="185.0" promptText="select" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+            <Button fx:id="id_cancel" layoutX="697.0" layoutY="609.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

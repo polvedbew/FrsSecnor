@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import org.controlsfx.control.SearchableComboBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.registration.SoftwareRegistrationController">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="408.0" style="-fx-background-color: #68828C;">
+         <children>
+            <Text layoutX="67.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adapter registration" textAlignment="CENTER" wrappingWidth="466.60003662109364">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="570.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="655.0" layoutX="14.0" layoutY="10.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="573.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="183.0" layoutX="32.0" layoutY="424.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="161.0" />
+            <Button fx:id="id_button_add" layoutX="438.0" layoutY="614.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="32.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access Level" wrappingWidth="133.9999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="29.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent Authority" wrappingWidth="167.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="id_button_cancel" layoutX="317.0" layoutY="614.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="140.0" fitWidth="141.0" layoutX="43.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/sidePanel/floorPlan.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="38.0" layoutY="613.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Upload Photo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="44.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valid From" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="id_valid_from" layoutX="197.0" layoutY="388.0" prefHeight="26.0" prefWidth="152.0" />
+            <Text layoutX="365.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="30.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_last_name22111" layoutX="198.0" layoutY="340.0" prefHeight="26.0" prefWidth="369.0" />
+
+             <SearchableComboBox fx:id="id_access_level" editable="false" layoutX="194.0" layoutY="163.0" prefHeight="26.0" prefWidth="369.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+
+             <SearchableComboBox fx:id="id_status" editable="false" layoutX="194.0" layoutY="121.0" prefHeight="26.0" prefWidth="369.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+            <TextField fx:id="id_type" layoutX="196.0" layoutY="83.0" prefHeight="26.0" prefWidth="369.0" />
+            <TextField fx:id="id_name" layoutX="195.0" layoutY="38.0" prefHeight="26.0" prefWidth="369.0" />
+            <Text layoutX="202.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_remarks_field" layoutX="291.0" layoutY="462.0" prefHeight="98.0" prefWidth="279.0" />
+            <DatePicker fx:id="id_valid_to" layoutX="415.0" layoutY="387.0" prefHeight="26.0" prefWidth="152.0" />
+            <Text layoutX="29.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access key" wrappingWidth="167.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_access_key_field" layoutX="198.0" layoutY="249.0" prefHeight="26.0" prefWidth="369.0" />
+            <Text layoutX="29.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="167.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_location_field" layoutX="198.0" layoutY="294.0" prefHeight="26.0" prefWidth="369.0" />
+            <Text layoutX="28.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unique id" wrappingWidth="167.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_unique_id_field" layoutX="197.0" layoutY="203.0" prefHeight="26.0" prefWidth="369.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

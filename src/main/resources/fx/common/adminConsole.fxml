@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<?import org.controlsfx.control.SearchableComboBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="560.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.server.AdminConsoleController">
+   <children>
+      <AnchorPane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #68828C;">
+         <children>
+            <Text layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Console" textAlignment="CENTER" wrappingWidth="382.99298095703125">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="334.0" prefWidth="560.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="146.0" layoutX="15.0" layoutY="105.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="529.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="309.0" layoutX="11.0" layoutY="12.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="538.0" />
+            <Text fx:id="id_text_server_status" layoutX="32.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server status">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="id_button_save" layoutX="389.0" layoutY="265.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Save">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="id_button_cancel" layoutX="268.0" layoutY="265.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="id_text_hit_count" layoutX="32.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hit count">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_text_field_email" layoutX="168.0" layoutY="127.0" prefHeight="26.0" prefWidth="359.0" promptText="eg: department@domain.com" style="-fx-background-color: linear-gradient(to top, #E8F2FC , #F2F2FF);" />
+            <Text layoutX="32.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email ID">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_text_field_password" layoutX="168.0" layoutY="161.0" prefHeight="26.0" prefWidth="359.0" promptText="password to the provided email account" style="-fx-background-color: linear-gradient(to top, #E8F2FC , #F2F2FF);" />
+            <SearchableComboBox fx:id="id_selector_mail_server" layoutX="168.0" layoutY="195.0" prefHeight="26.0" prefWidth="359.0" promptText="Select Host server"  stylesheets="@../styleSheets/searchableComboBox.css"  />
+            <Text layoutX="32.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail server">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

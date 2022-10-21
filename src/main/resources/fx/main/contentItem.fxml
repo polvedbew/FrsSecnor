@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="id_content_item_scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="98.0" prefWidth="100.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.main.ContentItemController">
+<children>
+    <Rectangle fx:id="id_rectangle" arcHeight="5.0" arcWidth="5.0" fill="linear-gradient(to top , #68828C , #F2F2FF)" height="96.0" opacity="0.5" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 50;" width="100.0" />
+    <ImageView fx:id="id_image" fitHeight="72.0" fitWidth="74.0" layoutX="15.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../images/main/refresh.png" />
+        </image>
+    </ImageView>
+    <Label fx:id="id_name" alignment="CENTER" blendMode="SCREEN" layoutX="9.0" layoutY="73.0" prefHeight="23.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF00;" text="Error" textAlignment="CENTER" textFill="#000000" wrapText="true">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+</children>
+</AnchorPane>

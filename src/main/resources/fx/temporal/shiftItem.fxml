@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="id_anchor_pane" prefHeight="103.0" prefWidth="410.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.temporal.ShiftItemController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="98.0" layoutX="2.0" layoutY="3.0" opacity="0.26" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30; -fx-fill: linear-gradient(to top, #98B2BC , #F2F2FF);" width="405.0" />
+      <Text fx:id="id_name" layoutX="7.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="181.9999999999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_status" layoutX="187.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="101.49999999999989">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_warning" layoutX="295.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning" textAlignment="CENTER" wrappingWidth="111.5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="49.999999999999886">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="50.49999999999977">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_from" layoutX="70.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="from" textAlignment="CENTER" wrappingWidth="99.99999999999977">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_from_margin" layoutX="190.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="margin" textAlignment="CENTER" wrappingWidth="111.5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_from_auto" layoutX="304.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="auto" textAlignment="CENTER" wrappingWidth="101.5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_to" layoutX="70.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" textAlignment="CENTER" wrappingWidth="99.99999999999977">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_to_margin" layoutX="190.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="margin" textAlignment="CENTER" wrappingWidth="111.5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_to_auto" layoutX="304.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="auto" textAlignment="CENTER" wrappingWidth="101.5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_remarks" layoutX="11.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" wrappingWidth="267.9999999999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="25.0" layoutX="301.0" layoutY="70.0" opacity="0.41" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20; -fx-fill: linear-gradient(to top , #68828C , #F2F2FF);" width="96.0" />
+      <Text fx:id="id_edit" layoutX="311.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" textAlignment="CENTER" wrappingWidth="75.99999999999989">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

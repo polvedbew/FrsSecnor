@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import org.controlsfx.control.SearchableComboBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.registration.EmployeeRegistrationController02">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="408.0" style="-fx-background-color: linear-gradient(to bottom , #809DAD, #304D5D);">
+         <children>
+            <Text fill="WHITE" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Registration" textAlignment="CENTER" wrappingWidth="948.5366325378418">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="697.0" prefWidth="942.0" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF);">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="645.0" layoutX="8.0" layoutY="14.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="918.0" />
+            <Text layoutX="50.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_department" layoutX="206.0" layoutY="103.0" prefHeight="26.0" prefWidth="224.0" />
+            <Button fx:id="id_page_2_next" layoutX="803.0" layoutY="609.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Next">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="id_organization" layoutX="206.0" layoutY="64.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="50.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organization" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+             <SearchableComboBox fx:id="id_card_primary" layoutX="206.0" layoutY="143.0" prefHeight="26.0" prefWidth="224.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+             <SearchableComboBox fx:id="id_line_manager" layoutX="206.0" layoutY="182.0" prefHeight="26.0" prefWidth="224.0" stylesheets="@../styleSheets/searchableComboBox.css" />
+             <TextField fx:id="id_prev_organization" layoutX="206.0" layoutY="220.0" prefHeight="26.0" prefWidth="224.0" />
+             <Text layoutX="50.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primary card" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="50.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line Manager" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail (Official)" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="41.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (Official)" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_email_official" layoutX="206.0" layoutY="341.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_phone_official" layoutX="206.0" layoutY="381.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="50.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous Organization" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="37.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (Official)" wrappingWidth="159.5999999999999">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_mobile_official" layoutX="206.0" layoutY="420.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="462.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail (Personal)" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="461.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (Personal)" wrappingWidth="179.73666381835926">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_email_personal" layoutX="648.0" layoutY="341.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_vehicle_reg_official" layoutX="206.0" layoutY="470.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="458.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (Personal)" wrappingWidth="179.73666381835932">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_vehicle_personal" layoutX="648.0" layoutY="470.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="50.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Contact Number" wrappingWidth="149.336669921875">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_emergency_contact" layoutX="206.0" layoutY="567.0" prefHeight="26.0" prefWidth="224.0" />
+            <TextField fx:id="id_phone_personal" layoutX="648.0" layoutY="382.0" prefHeight="26.0" prefWidth="224.0" style="-fx-background-color: #FAFAFA;" />
+            <Text layoutX="27.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Registration number (Official)" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Registration number (Personal)" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_mobile_personal" layoutX="648.0" layoutY="421.0" prefHeight="26.0" prefWidth="224.0" />
+            <Button fx:id="id_back_button_reg2" layoutX="677.0" layoutY="609.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to top, #A8C2CC , #E2E2EF);" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="462.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day offs rem." wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_day_offs_remaining" layoutX="648.0" layoutY="102.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="462.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casusal leave" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_leave_remaining" layoutX="648.0" layoutY="61.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text fx:id="ddd" layoutX="460.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sick leaves rem." wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_sick_leaves" layoutX="648.0" layoutY="300.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="459.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privilege leave" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_privilege_leave" layoutX="648.0" layoutY="261.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="460.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid leave" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_paid_leave" layoutX="648.0" layoutY="144.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="460.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Earned leave" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_earned_leave" layoutX="648.0" layoutY="183.0" prefHeight="26.0" prefWidth="224.0" />
+            <Text layoutX="460.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency leave" wrappingWidth="179.73666381835938">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_emergency_leave" layoutX="648.0" layoutY="221.0" prefHeight="26.0" prefWidth="224.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

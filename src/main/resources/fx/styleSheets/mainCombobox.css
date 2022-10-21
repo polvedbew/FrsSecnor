@@ -1,0 +1,19 @@
+
+
+ .combo-box .list-cell{
+
+-fx-background-color:linear-gradient(to top, #A8C2CC55 , #F2F2FF55);
+
+}
+.combo-box .list-cell:hover{
+
+-fx-background-color:linear-gradient(to top, #A8C2CC , #F2F2FF);
+}
+.combo-box .list-cell:selected{
+
+-fx-background-color:linear-gradient(to top, #A8C2CC00 , #F2F2FF00);
+
+}
+.combo-box .combo-box-popup .list-view{
+-fx-background-color:linear-gradient(to top, #A8C2CC33 , #F2F2FF33);
+}

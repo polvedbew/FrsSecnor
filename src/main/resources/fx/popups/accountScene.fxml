@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox style="-fx-background-color: #00000000; -fx-background: #00000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.popups.AccountSceneController">
+        <children>
+      <AnchorPane fx:id="id_anchorPane" prefHeight="118.0" prefWidth="293.0" style="-fx-background-color: #00000000; -fx-background: #00000000;">
+         <children>
+                    <Rectangle fx:id="id_group_personRectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="144.0" opacity="0.76" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25; -fx-fill: linear-gradient(to  right, #68828C , #F2F2FF);" width="293.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="32.0" layoutX="150.0" layoutY="93.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="129.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="32.0" layoutX="14.0" layoutY="93.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="129.0" />
+            <Text fx:id="id_name_text" layoutX="15.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="269.7294921875">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fx:id="id_status_text" layoutX="16.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="209.7294921875">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text fx:id="id_settings_text" layoutX="36.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="85.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="id_logout_text" layoutX="172.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout" wrappingWidth="85.7294921875">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="id_change_passWord" fill="#1611ed" layoutX="15.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change password" underline="true" wrappingWidth="209.7294921875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+        </children>
+    </VBox>

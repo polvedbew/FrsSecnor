@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.person.PersonDetailsController">
+   <children>
+      <AnchorPane prefHeight="28.0" prefWidth="408.0" style="-fx-background-color: #68828C;" VBox.vgrow="NEVER">
+         <children>
+            <Text fontSmoothingType="LCD" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #000000;" text="Person Details" textAlignment="CENTER" wrappingWidth="948.5366325378418">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <HBox style="-fx-background-color: linear-gradient(to top, #68828C , #F2F2FF);" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane fx:id="id_scroll_pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="720.0" prefWidth="590.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/scrollBar.css" HBox.hgrow="ALWAYS">
+               <content>
+                  <AnchorPane prefHeight="1250.0" prefWidth="585.0" style="-fx-background-color: #00000000; -fx-background: #000000;">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="1250.0" layoutX="6.0" layoutY="9.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="562.0" />
+                       
+                        <Text fx:id="id_warning_status" layoutX="233.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning status" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_validity" layoutX="233.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validity" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_grade" layoutX="233.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_card_number" layoutX="233.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_id_proof" layoutX="233.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Proof No." wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_dob" layoutX="233.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_gender" layoutX="233.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_marital_status" layoutX="233.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marital Status" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_religion" layoutX="233.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Religion" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_organization" layoutX="233.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organization" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_name_local" layoutX="233.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name in Local Language" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_access_level" layoutX="233.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access Level" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager" layoutX="233.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line Manager" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_email_official" layoutX="233.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail (Official)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_phone_official" layoutX="233.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (Official)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_prev_org" layoutX="233.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous Organization" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_mobile_official" layoutX="233.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (Official)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_email_personal" layoutX="233.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail (Personal)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_phone_personal" layoutX="233.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (Personal)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_mobile_personal" layoutX="233.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (Personal)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_emergency_contact" layoutX="233.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Contact Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_vehicle_reg_official" layoutX="233.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle number (Official)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_vehicle_registration_personal" layoutX="233.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle number (Personal)" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_addr1" layoutX="233.0" layoutY="668.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 1" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_present_address" layoutX="12.0" layoutY="668.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Present Address" wrappingWidth="300.0" AnchorPane.leftAnchor="12.0">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_state" layoutX="233.0" layoutY="754.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_addr2" layoutX="233.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 2" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_addr_lm" layoutX="233.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Mark" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_country" layoutX="233.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_phone_number" layoutX="233.0" layoutY="817.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_city" layoutX="233.0" layoutY="733.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_mobile" layoutX="233.0" layoutY="839.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_postal_code" layoutX="233.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_per_line1" layoutX="233.0" layoutY="920.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 1" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_permanent_addr" layoutX="13.0" layoutY="919.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permenant Address" wrappingWidth="300.0" AnchorPane.leftAnchor="13.0">
+                           <font>
+                              <Font name="Calibri Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_state" layoutX="233.0" layoutY="1006.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_per_line2" layoutX="233.0" layoutY="942.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line 2" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_land_mark" layoutX="233.0" layoutY="963.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Mark" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_country" layoutX="233.0" layoutY="1027.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_phone" layoutX="233.0" layoutY="1069.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_city" layoutX="233.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_mobile" layoutX="233.0" layoutY="1091.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_perm_post" layoutX="233.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code" wrappingWidth="300.0" AnchorPane.leftAnchor="233.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_full_name" layoutX="233.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name" wrappingWidth="300.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager211" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2111" layoutX="14.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organization" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112" layoutX="14.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Religion" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2113" layoutX="14.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marital status" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2114" layoutX="14.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2115" layoutX="14.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2116" layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id proof" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2117" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validity" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2118" layoutX="14.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2119" layoutX="14.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21110" layoutX="14.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency contact" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21111" layoutX="14.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (personal)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21112" layoutX="14.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email (personal)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21113" layoutX="14.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (official)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21114" layoutX="14.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone (official)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21115" layoutX="14.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email (ofiicial)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21116" layoutX="14.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local name" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21117" layoutX="14.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prev. Organization" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21118" layoutX="14.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line Manager" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21119" layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access level" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21120" layoutX="14.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal code" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21121" layoutX="14.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21122" layoutX="14.0" layoutY="754.0" strokeType="OUTSIDE" strokeWidth="0.0" text="County" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21123" layoutX="14.0" layoutY="733.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21124" layoutX="14.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land mark" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21127" layoutX="14.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Present address" wrappingWidth="215.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21128" layoutX="14.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle (personal)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21129" layoutX="14.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle (official)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21131" layoutX="14.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile (personal)" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21132" layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning status" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager211201" layoutX="14.0" layoutY="817.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager211202" layoutX="14.0" layoutY="839.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile number" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112021" layoutX="14.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112022" layoutX="14.0" layoutY="1006.0" strokeType="OUTSIDE" strokeWidth="0.0" text="County" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112023" layoutX="14.0" layoutY="1027.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112024" layoutX="14.0" layoutY="1047.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal code" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112025" layoutX="14.0" layoutY="1069.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112026" layoutX="14.0" layoutY="1091.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile number" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager2112027" layoutX="14.0" layoutY="884.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permanent address" wrappingWidth="215.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21120210" layoutX="14.0" layoutY="963.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Landmark" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_reset_password" fill="#1d0dff" layoutX="14.0" layoutY="1184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reset Password" underline="true" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_leaves_remaining" layoutX="233.0" layoutY="1120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leaves" wrappingWidth="300.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager21120261" layoutX="14.0" layoutY="1120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave remaining" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_day_offs_remaining" layoutX="232.0" layoutY="1146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day offs" wrappingWidth="300.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="id_line_manager211202611" layoutX="13.0" layoutY="1146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day offs remaining" wrappingWidth="215.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <HBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </HBox.margin>
+            </ScrollPane>
+            <AnchorPane fx:id="id_right_anchorPane" prefWidth="359.0" HBox.hgrow="NEVER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="684.0" layoutX="10.0" layoutY="16.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="339.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="16.0" />
+                  <AnchorPane layoutX="33.0" layoutY="57.0" prefHeight="136.0" prefWidth="124.0" style="-fx-background-color: linear-gradient(to bottom , #809DAD, #304D5D);" />
+                  <ImageView fitHeight="142.0" fitWidth="124.0" layoutX="33.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/sidePanel/user.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="20.0" layoutY="203.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="59.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="324.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="24.0" layoutX="10.0" layoutY="4.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="131.0" />
+                        <DatePicker fx:id="id_from" layoutX="45.0" layoutY="31.0" prefHeight="15.0" prefWidth="96.0" />
+                        <Label fx:id="id_download_text" layoutX="41.0" layoutY="8.0" prefHeight="14.0" prefWidth="72.0" style="-fx-text-fill: #000000;" text="Download">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="id_to" layoutX="181.0" layoutY="31.0" prefHeight="15.0" prefWidth="96.0" />
+                        <Label fx:id="id_edit_button11" layoutX="9.0" layoutY="36.0" prefHeight="15.0" prefWidth="34.0" style="-fx-text-fill: #000000;" text="From">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id_edit_button111" layoutX="149.0" layoutY="36.0" prefHeight="15.0" prefWidth="34.0" style="-fx-text-fill: #000000;" text="To">
+                           <font>
+                              <Font name="Calibri" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="id_refresh" fitHeight="34.0" fitWidth="34.0" layoutX="284.0" layoutY="14.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/main/refresh.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="24.0" layoutX="151.0" layoutY="4.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="131.0" />
+                        <TextField fx:id="id_log_search" layoutX="155.0" layoutY="4.0" minWidth="96.0" opacity="0.75" prefHeight="24.0" prefWidth="96.0" promptText="Type here to search" style="-fx-background-color: #00000000;" />
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="252.0" layoutY="4.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/main/search.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="id_calender" fitHeight="23.0" fitWidth="25.0" layoutX="291.0" layoutY="-26.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/sidePanel/calendar_clock.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="419.0" layoutX="21.0" layoutY="269.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 25;" width="324.0" />
+
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="24.0" layoutX="166.0" layoutY="175.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 25;" width="124.0" />
+                  <Label fx:id="id_edit_button" layoutX="206.0" layoutY="180.0" prefHeight="14.0" prefWidth="72.0" text="Edit person">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="id_name" layoutX="160.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="171.0" AnchorPane.leftAnchor="160.0">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="id_designation" layoutX="161.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" textAlignment="CENTER" wrappingWidth="171.0" AnchorPane.leftAnchor="161.0">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="id_department" layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" textAlignment="CENTER" wrappingWidth="315.0" AnchorPane.leftAnchor="24.0">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="id_status" layoutX="162.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="171.0" AnchorPane.leftAnchor="162.0">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="id_id" layoutX="160.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Number" textAlignment="CENTER" wrappingWidth="171.0" AnchorPane.leftAnchor="160.0">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="id_LogList" layoutX="23.0" layoutY="275.0" prefHeight="373.0" prefWidth="322.0" style="-fx-control-inner-background: #00000000;                                   -fx-control-inner-background-alt: derive(-fx-control-inner-background, 100%)" stylesheets="@../styleSheets/sideList.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="id_anchor_pane" maxHeight="50.0" maxWidth="105.0" minHeight="50.0" minWidth="105.0" prefHeight="50.0" prefWidth="105.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.view.fx.others.DayItemController">
+   <children>
+      <Rectangle fx:id="id_rectangle" arcHeight="5.0" arcWidth="2.0" fill="DODGERBLUE" height="47.0" layoutX="2.0" layoutY="1.0" opacity="0.4" stroke="#B2B2BF" strokeType="INSIDE" strokeWidth="0.17" style="-fx-fill: linear-gradient(to top, #689298 , #A2B2BF); -fx-arc-width: 15; -fx-arc-height: 15;" width="101.0" />
+      <Text fx:id="id_day" layoutX="2.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="88" textAlignment="CENTER" wrappingWidth="53.2919921875">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_stat" layoutX="55.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disabled" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_remark" layoutX="5.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" wrappingWidth="95.9423828125">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_time" layoutX="55.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="id_by" layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
