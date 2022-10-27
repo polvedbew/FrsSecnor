@@ -10,8 +10,10 @@ import java.util.Locale;
 
 public class MqttClbk  implements MqttCallback {
     MainInterfaceControllerFinal ctrl;
-    public MqttClbk(MainInterfaceControllerFinal ctrl){
+    private static PollyDemo polly;
+    public MqttClbk(MainInterfaceControllerFinal ctrl,final PollyDemo polly){
         this.ctrl=ctrl;
+        this.polly=polly;
 
         try{
 
@@ -34,8 +36,9 @@ public class MqttClbk  implements MqttCallback {
 
             System.out.println(name + "  Message received:\n\t" + rcv);
             ctrl.setHiText(name);
-            TTS_Mbrola.doSpeak("Hi, "+name+"   \n welcome to norden \n nice to meet you.");
+            //TTS_Mbrola.doSpeak("Hi, "+name+"   \n welcome to norden \n nice to meet you.");
            // CommandTTS.doSpeak(name);
+            polly.playNow("Hi, "+name+" , hope you are having a nice time, we are to transform lives the norden way , to know more , visit norden communications web site");
         }catch (Exception e){
             //
         }

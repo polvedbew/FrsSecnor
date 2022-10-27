@@ -1,3 +1,5 @@
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,6 +17,7 @@ import static com.sun.javafx.scene.control.skin.Utils.getResource;
 
 public class Main {
     private static MainInterfaceControllerFinal micf;
+    private static final PollyDemo polly=new PollyDemo(Region.getRegion(Regions.US_EAST_1));
 
     public static void main(String args[]) {
 
@@ -115,7 +118,7 @@ public class Main {
                         connOpt.setKeepAliveInterval(6000);
 
                         MqttClient client = new MqttClient("tcp://192.168.2.21:1885", cid);
-                        MqttClbk clbk=new MqttClbk(micf);
+                        MqttClbk clbk=new MqttClbk(micf,polly);
                         client.setCallback(clbk);
                         client.connect(connOpt);
                         client.subscribe(topic, 0);
@@ -132,13 +135,13 @@ public class Main {
                         try {
                             Thread.sleep(3000);
                             //clbk.messageArrived("blaaaah",null);
-                            TTS.doSpeak("hi, lets transform lives the norden way");
+                            polly.playNow("testing breath test from norden , and it is awesome");
                         } catch (Exception e) {
                             //
                         }
 
                     }
-                }).start();
+                });//.start();
 
             } catch (IOException e) {
                 System.out.println("caught main "+e.toString());
