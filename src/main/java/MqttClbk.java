@@ -35,7 +35,7 @@ public class MqttClbk  implements MqttCallback {
             System.out.println(name + "  Message received:\n\t" + rcv);
             ctrl.setHiText(name);
             TTS_Mbrola.doSpeak("Hi, "+name+"   \n welcome to norden \n nice to meet you.");
-
+           // CommandTTS.doSpeak(name);
         }catch (Exception e){
             //
         }

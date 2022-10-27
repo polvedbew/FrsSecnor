@@ -32,6 +32,8 @@ public class TTS {
         desc = (SynthesizerModeDesc)  synthesizer.getEngineModeDesc();
         try {
             synthesizer.allocate();
+           // synthesizer.getSynthesizerProperties().setSpeakingRate(130);
+           // synthesizer.getSynthesizerProperties().setPitch(180f);
 
         } catch (EngineException eee) {
             throw new RuntimeException("ee");

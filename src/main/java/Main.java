@@ -132,13 +132,13 @@ public class Main {
                         try {
                             Thread.sleep(3000);
                             //clbk.messageArrived("blaaaah",null);
-                            TTS_Mbrola.doSpeak("blaaaaaaaaaaah blaaaaaaaaah bullshit");
+                            TTS.doSpeak("hi, lets transform lives the norden way");
                         } catch (Exception e) {
                             //
                         }
 
                     }
-                });//.start();
+                }).start();
 
             } catch (IOException e) {
                 System.out.println("caught main "+e.toString());
