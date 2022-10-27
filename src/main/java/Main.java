@@ -17,6 +17,9 @@ public class Main {
     private static MainInterfaceControllerFinal micf;
 
     public static void main(String args[]) {
+
+
+
      /*  JPlaceHolder api= NaiveRetrofitBuilder.getApi();
         api.getStatus().subscribe(new Subscriber<List<StatusObj>>() {
             @Override
@@ -112,15 +115,30 @@ public class Main {
                         connOpt.setKeepAliveInterval(6000);
 
                         MqttClient client = new MqttClient("tcp://192.168.2.21:1885", cid);
-                        client.setCallback(new MqttClbk(micf));
+                        MqttClbk clbk=new MqttClbk(micf);
+                        client.setCallback(clbk);
                         client.connect(connOpt);
                         client.subscribe(topic, 0);
+
+
                     } catch (Exception e) {
                         System.out.println("caught exception at mqtt" + e.toString() + "         \n" + e.getMessage());
                     }
                 }).start();
 
+                new Thread(()->{
+                    int v=20;
+                    while(v-- >0) {
+                        try {
+                            Thread.sleep(3000);
+                            //clbk.messageArrived("blaaaah",null);
+                            TTS_Mbrola.doSpeak("blaaaaaaaaaaah blaaaaaaaaah bullshit");
+                        } catch (Exception e) {
+                            //
+                        }
 
+                    }
+                }).start();
 
             } catch (IOException e) {
                 System.out.println("caught main "+e.toString());
