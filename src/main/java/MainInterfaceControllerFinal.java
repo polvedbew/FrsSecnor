@@ -64,20 +64,9 @@ public class MainInterfaceControllerFinal {
                 id_hi_text.setText("Hi,"+ "\n regards from Secnor... \n Have a nice day ");
                 return;
             }
-            if(lower.contains("mani")
-                    ||lower.contains("sajan")
-                    ||lower.contains("ikka")
-                    ||lower.contains("chechi")
-                    ||lower.contains("arun")
-                    ||lower.contains("ajith")
-            ){
-                id_hi_text.setText("Hi,\n " + str + "\n regards from Secnor... \n Have a nice day ");
 
-            }else if(lower.contains("badsha")){
-                id_hi_text.setText("Hey,\n  " + str + "\n this is secnor go back to EyeNor");
-            }else {
-                id_hi_text.setText("Hi,\n  " + str + "\n this is secnor, \nand it is free to download from \nnordencommunications.org");
-            }
+            id_hi_text.setText(FeedBackStrings.preText+"\n  " + str + "\n "+ FeedBackStrings.postText);
+
         });
     }
 

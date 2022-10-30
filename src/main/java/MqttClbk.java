@@ -38,10 +38,10 @@ public class MqttClbk  implements MqttCallback {
             ctrl.setHiText(name);
             //TTS_Mbrola.doSpeak("Hi, "+name+"   \n welcome to norden \n nice to meet you.");
            // CommandTTS.doSpeak(name);
-            if(name.equals("null")){
+            if(name.contains(":nul")){
                 name = "friend";
             }
-            polly.playNow("Hi, "+name+",, , hope you are having a nice time, we are transforming lives the norden way , to know more , visit norden communications web site");
+            polly.playNow(FeedBackStrings.preSpeech+name+",, , "+ FeedBackStrings.postSpeech);
         }catch (Exception e){
             //
         }

@@ -137,14 +137,14 @@ public class Main {
                         try {
                             Thread.sleep(3000);
                             //clbk.messageArrived("blaaaah",null);
-                          //  polly.playNow("testing breath test from norden , and it is awesome");
-                          //  TTS_Mbrola.doSpeak("");
+                            polly.playNow(FeedBackStrings.preSpeech+"test "+v+",, , "+ FeedBackStrings.postSpeech);
+                            micf.setHiText("test "+v);
                         } catch (Exception e) {
                             //
                         }
 
                     }
-                });//.start();
+                }).start();
 
             } catch (IOException e) {
                 System.out.println("caught main "+e.toString());
