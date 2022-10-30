@@ -21,7 +21,7 @@
                   <Image url="@../../images/common/l1.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="id_image_centre" fitHeight="413.0" fitWidth="433.0" layoutX="451.0" layoutY="216.0" opacity="0.15" pickOnBounds="true" preserveRatio="true" x="100.0" AnchorPane.bottomAnchor="350.0" AnchorPane.topAnchor="316.0">
+            <ImageView fx:id="id_image_centre" fitHeight="413.0" fitWidth="433.0" layoutX="400.0" layoutY="350.0" opacity="0.15" pickOnBounds="true" preserveRatio="true" x="100.0">
                <image>
                   <Image url="@../../images/main/logoNorden.png" />
                </image>

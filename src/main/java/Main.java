@@ -77,7 +77,8 @@ public class Main {
                 final double nUrlX = micf.id_norden_url.getLayoutX();
                 final double tRimgX = micf.id_top_right_image.getLayoutX();
                 final double bRimgX = micf.id_bottom_right_image.getLayoutX();
-                final double cImgX = micf.id_image_centre.getLayoutX();
+                final double cImgX = (conRecW/2)-178; //micf.id_image_centre.getLayoutX();
+                final double cImgY = (ivalH/2)-50; //micf.id_image_centre.getLayoutX();
                 final double lbImgY = micf.id_image_bottom_left.getLayoutY();
                 stage.widthProperty().addListener((obs, oldVal, newVal) -> {
                     if (newVal.intValue() < 800) {
@@ -107,6 +108,7 @@ public class Main {
                     micf.id_side_scroll_pane.setPrefHeight(newVal.intValue() - 100);
                     micf.id_norden_url.setLayoutY(newVal.intValue() - 50);
                     micf.id_image_bottom_left.setLayoutY(lbImgY - (cwd) - 50);
+                    micf.id_image_centre.setLayoutY(cImgY - (cwd / 2));
 
                 });
 
