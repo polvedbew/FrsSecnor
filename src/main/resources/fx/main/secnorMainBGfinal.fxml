@@ -16,7 +16,7 @@
    <children>
       <AnchorPane fx:id="id_main_anchor_pane" style="-fx-background-color: linear-gradient(to top left, #68828C , #F2F2FF)" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fx:id="id_loading_image" fitHeight="97.0" fitWidth="206.0" layoutX="-18.0" layoutY="-3.0" nodeOrientation="INHERIT" pickOnBounds="true">
+            <ImageView fx:id="id_loading_image" fitHeight="90.0" fitWidth="136.0" layoutX="-18.0" layoutY="-3.0" nodeOrientation="INHERIT" opacity="0.0" pickOnBounds="true">
                <image>
                   <Image url="@../../images/common/l1.png" />
                </image>
@@ -26,7 +26,7 @@
                   <Image url="@../../images/main/logoNorden.png" />
                </image>
             </ImageView>
-            <Rectangle fx:id="id_content_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="634.0" layoutX="307.0" layoutY="87.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="923.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="307.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="87.0" />
+            <Rectangle fx:id="id_content_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#68828c" height="634.0" layoutX="74.0" layoutY="87.0" opacity="0.17" stroke="#615858" strokeType="INSIDE" style="-fx-arc-height: 100; -fx-arc-width: 80;" width="1156.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="87.0" />
             <ImageView fx:id="id_image_bottom_left" fitHeight="318.0" fitWidth="444.0" layoutX="-9.0" layoutY="461.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/main/meshnor2.png" />
@@ -77,11 +77,11 @@
                </children>
 
             </AnchorPane>
-            <ScrollPane fx:id="id_content_scroll_pane" hbarPolicy="NEVER" layoutX="342.0" layoutY="122.0" prefHeight="590.0" prefWidth="898.0" style="-fx-background-color: #00000000; -fx-background: #00000000; " stylesheets="@../styleSheets/scrollBar.css">
+            <ScrollPane fx:id="id_content_scroll_pane" hbarPolicy="NEVER" layoutX="116.0" layoutY="122.0" prefHeight="590.0" prefWidth="1080.0" style="-fx-background-color: #00000000; -fx-background: #00000000; " stylesheets="@../styleSheets/scrollBar.css">
                <content>
-                  <FlowPane fx:id="id_content_flow_pane" prefHeight="569.0" prefWidth="872.0">
+                  <FlowPane fx:id="id_content_flow_pane" prefHeight="569.0" prefWidth="1063.0">
                      <children>
-                        <Text fx:id="id_hi_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi,">
+                        <Text fx:id="id_hi_text" fill="#3db545" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi,">
                            <font>
                               <Font size="50.0" />
                            </font>
@@ -89,15 +89,26 @@
                      </children></FlowPane>
                </content>
             </ScrollPane>
-            <ScrollPane fx:id="id_side_scroll_pane" hbarPolicy="NEVER" layoutX="35.0" layoutY="82.0" prefHeight="652.0" prefWidth="250.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/scrollBar.css">
+            <ScrollPane fx:id="id_side_scroll_pane" hbarPolicy="NEVER" layoutX="35.0" layoutY="82.0" prefHeight="652.0" prefWidth="40.0" style="-fx-background-color: #00000000; -fx-background: #00000000;" stylesheets="@../styleSheets/scrollBar.css">
                <content>
-                  <FlowPane fx:id="id_flow_pane_side" alignment="TOP_CENTER" maxWidth="234.0" prefHeight="637.0" prefWidth="234.0" prefWrapLength="10000.0" />
+                  <FlowPane fx:id="id_flow_pane_side" alignment="TOP_CENTER" maxWidth="20.0" opacity="0.0" prefHeight="627.0" prefWidth="45.0" prefWrapLength="10000.0" />
                </content>
             </ScrollPane>
             <AnchorPane prefHeight="112.0" prefWidth="273.0" />
             <ImageView fitHeight="53.0" fitWidth="189.0" layoutX="64.0" layoutY="23.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/main/secnorNorden.png" />
+                  <Image url="@../../images/common/EyenorLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="244.0" layoutX="84.0" layoutY="735.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/common/unnamed.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="165.0" layoutY="734.0" opacity="0.49" strokeType="OUTSIDE" strokeWidth="0.0" text="Our brands" />
+            <ImageView fitHeight="22.0" fitWidth="72.0" layoutX="194.0" layoutY="734.0" opacity="0.54" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/main/Secnor.png" />
                </image>
             </ImageView>
          </children>
