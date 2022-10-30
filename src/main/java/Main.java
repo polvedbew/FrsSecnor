@@ -137,8 +137,8 @@ public class Main {
                         try {
                             Thread.sleep(3000);
                             //clbk.messageArrived("blaaaah",null);
-                            polly.playNow(FeedBackStrings.preSpeech+"test "+v+",, , "+ FeedBackStrings.postSpeech);
                             micf.setHiText("test "+v);
+                            polly.playNow(FeedBackStrings.preSpeech+"test "+v+",, , "+ FeedBackStrings.postSpeech);
                         } catch (Exception e) {
                             //
                         }

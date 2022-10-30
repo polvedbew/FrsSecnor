@@ -61,11 +61,11 @@ public class MainInterfaceControllerFinal {
         final String str=strn.substring(2);
         Platform.runLater(()->{
             if(strn.contains(":nul")){
-                id_hi_text.setText("Hi,"+ "\n regards from Secnor... \n Have a nice day ");
+                id_hi_text.setText(FeedBackStrings.preText+"\n    " + str +  FeedBackStrings.postText);
                 return;
             }
 
-            id_hi_text.setText(FeedBackStrings.preText+"\n  " + str + "\n "+ FeedBackStrings.postText);
+            id_hi_text.setText(FeedBackStrings.preText+"\n    " + str +  FeedBackStrings.postText);
 
         });
     }
